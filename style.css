@@ -1,0 +1,42 @@
+/* ------------------------------------------
+    Imported Google Fonts (Poppins) 
+--------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* --------------------------------
+    Common Styles and Utilities 
+----------------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    top: 0;
+}
+a {
+    text-decoration: none;
+}
+.link-button {
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #E02C6D;
+}
+
+
+/* -----------------------
+    Top Banner Styles 
+-------------------------- */
+.top-banner {
+    display: flex;
+    padding: 50px 124px 86px 156px;
+    background-color: blue;
+}
+.banner-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+.banner-image img {
+    width: 556px;
+}
