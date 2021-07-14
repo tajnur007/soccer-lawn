@@ -22,16 +22,12 @@ a {
     color: white;
     background-color: #E02C6D;
 }
-.half-width {
-    width: 50%;
-}
 
 
 /* -----------------------
     Navigation Bar Styles 
 -------------------------- */
 nav {
-    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 42px 124px 0 156px;
@@ -57,7 +53,8 @@ nav {
     Top Banner Styles 
 -------------------------- */
 .top-banner {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: 50px 124px 86px 156px;
     background-color: blue;
@@ -113,7 +110,8 @@ nav {
     All Highlights Styles
 -------------------------- */
 .all-highlights {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: 100px 150px;
 }
@@ -167,4 +165,140 @@ footer {
 }
 .copyright {
     font-size: 18px;
+}
+
+
+
+/* ------------------------------------
+---                                 ---
+---  Responsive For Mobile Devices  ---
+---                                 ---
+--------------------------------------- */
+
+/* Styles For Mobile Devices  */
+@media only screen and (max-width:688px) {
+    /* -----------------------
+    Navigation Bar Styles 
+    -------------------------- */
+    nav {
+        padding: 30px 16px;
+    }
+    .bars {
+        display: block;
+    }
+    .links {
+        display: none;
+    }
+
+    
+    /* -----------------------
+        Top Banner Styles 
+    -------------------------- */
+    .top-banner {
+        padding: 30px 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-title {
+        font-size: 36px;
+    }
+    .banner-image img {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+
+    /* -----------------------
+        Player Card Styles
+    -------------------------- */
+    .player-card-container {
+        padding: 47px 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* -----------------------
+        All Highlights Styles
+    -------------------------- */
+    .all-highlights {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 16px;
+    }
+    .match-details {
+        padding: 0 0 35px 0;
+        width: 100%;
+    }
+    .match-title {
+        font-size: 30px;
+    }
+
+
+    /* -----------------------
+        Footer Styles
+    -------------------------- */
+    .footer-image {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-image img {
+        width: 75%;
+    }
+}
+
+/* Styles For Tablet Devices  */
+@media only screen and (min-width:689px) and (max-width:1030px) {
+    /* -----------------------
+    Navigation Bar Styles 
+    -------------------------- */
+    nav {        
+        padding: 30px 50px 0 70px;
+    }
+
+    
+    /* -----------------------
+        Top Banner Styles 
+    -------------------------- */
+    .top-banner {
+        padding: 30px 70px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-title {
+        font-size: 50px;
+    }
+    .banner-image img {
+        width: 100%;
+    }
+
+
+    /* -----------------------
+        Player Card Styles
+    -------------------------- */
+    .player-card-container {
+        padding: 47px 70px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* -----------------------
+        All Highlights Styles
+    -------------------------- */
+    .all-highlights {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 70px;
+    }
+    .match-details {
+        padding: 0 35px 0 0;
+    }
+    .match-title {
+        font-size: 45px;
+    }
+
+
+    /* -----------------------
+        Footer Styles
+    -------------------------- */
+    .footer-image {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-image img {
+        width: 75%;
+    }
 }
