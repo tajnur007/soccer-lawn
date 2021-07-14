@@ -70,6 +70,10 @@ nav {
 }
 .banner-image img {
     width: 556px;
+    transition: transform .3s linear;
+}
+.banner-image img:hover {
+    transform: scale(1.2);
 }
 
 
