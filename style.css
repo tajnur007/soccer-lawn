@@ -28,6 +28,32 @@ a {
 
 
 /* -----------------------
+    Navigation Bar Styles 
+-------------------------- */
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 124px 0 156px;
+    background-color: blue;
+}
+.bars {
+    display: none;
+    font-size: 24px;
+    color: white;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 588px;
+}
+.link a {
+    color: white;
+    font-weight: 500;
+}
+
+
+/* -----------------------
     Top Banner Styles 
 -------------------------- */
 .top-banner {
