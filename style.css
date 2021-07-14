@@ -142,6 +142,20 @@ footer {
     align-items: center;
     margin: 50px 0;    
 }
+.others {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    border-top: 2px solid gray;
+}
+.other-title {
+    padding-bottom: 20px;
+}
+.other-link a {
+    color: gray
+}
 .footer-image img {
     width: 485px;
 }
